@@ -115,6 +115,10 @@ C.MAP_ID_TO_KEYWORDS = {
     [2657] = { "tww", "np" }, -- Nerub-ar Palace
     [2769] = { "tww", "lou" }, -- Liberation of Undermine
     [2810] = { "tww", "mfo" }, -- Manaforge Omega
+    [1592] = { "mn", "sf" }, -- Sporefall
+    [2912] = { "mn", "vs" }, -- The Voidspire
+    [2913] = { "mn", "moq" }, -- March on Quel'Danas
+    [2939] = { "mn", "dr" }, -- The Dreamrift
     -- Dungeons
     [ 658] = { "wotlk", "pos", "mns1" }, -- Pit of Saron
     [  33] = { "cata", "sfk" }, -- Shadowfang Keep
@@ -206,9 +210,6 @@ C.MAP_ID_TO_KEYWORDS = {
     [2811] = { "mn", "mt", "mns1" }, -- Magisters' Terrace
     [2874] = { "mn", "mai", "mns1" }, -- Maisara Caverns
     [2915] = { "mn", "npx", "mns1" }, -- Nexus-Point Xenas
-    [2912] = { "mn", "vs" }, -- The Voidspire
-    [2913] = { "mn", "moq" }, -- March on Quel'Danas
-    [2939] = { "mn", "dr" }, -- The Dreamrift
 }
 
 -- Raider.io keywords can be found here:
