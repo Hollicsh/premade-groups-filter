@@ -53,9 +53,9 @@ local DELVE_ACTIVITY_MAP = {
     { activityGroupID = 413, tier1ActivityID = 1892 }, -- The Shadow Enclave
     { activityGroupID = 414, tier1ActivityID = 1903 }, -- Twilight Crypts
     { activityGroupID = 415, tier1ActivityID = 1914 }, -- The Darkway
-    { activityGroupID =   0, tier1ActivityID =    0 }, -- The Ring of Glory
-    { activityGroupID =   0, tier1ActivityID =    0 }, -- Gnarldor Isle
-    { activityGroupID = 999, tier1ActivityID = 9999 }, -- Venomfall Deeps
+    --{ activityGroupID =   0, tier1ActivityID =    0 }, -- The Ring of Glory
+    --{ activityGroupID =   0, tier1ActivityID =    0 }, -- Gnarldor Isle
+    --{ activityGroupID = 999, tier1ActivityID = 9999 }, -- Venomfall Deeps
 }
 setmetatable(DELVE_ACTIVITY_MAP, { __index = function() return { activityGroupID = 0, tier1ActivityID = 0 } end })
 
@@ -208,10 +208,12 @@ function DelvePanel:UpdateDelves()
         local color = WHITE_FONT_COLOR
         local isBountiful = false
         local delve = self.Delves["Delve"..i]
-        for _, bountifulDelveName in ipairs(bountifulDelves) do
-            if PGF.IsMostLikelySameInstance(delve.name, bountifulDelveName) then
-                color = NORMAL_FONT_COLOR
-                isBountiful = true
+        if delve.name then
+            for _, bountifulDelveName in ipairs(bountifulDelves) do
+                if PGF.IsMostLikelySameInstance(delve.name, bountifulDelveName) then
+                    color = NORMAL_FONT_COLOR
+                    isBountiful = true
+                end
             end
         end
         delve.Title:SetTextColor(color:GetRGB())
