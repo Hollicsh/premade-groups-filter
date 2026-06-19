@@ -683,6 +683,7 @@ C.ACTIVITY = {
     [1795] = { difficulty = 4, category =   2, mapID = 1493, cmID = 207 }, -- Vault of the Wardens (Mythic Keystone)
     [1945] = { difficulty = 4, category =   2, mapID = 1677, cmID = 233 }, -- Cathedral of Eternal Night (Mythic Keystone)
     [1946] = { difficulty = 1, category =   3, mapID = 1592, cmID =   0 }, -- Sporefall (Normal)
+    [1947] = { difficulty = 3, category =   3, mapID = 1592, cmID =   0 }, -- Sporefall (Mythic)
     [1948] = { difficulty = 2, category =   3, mapID = 1592, cmID =   0 }, -- Sporefall (Heroic)
 }
 
