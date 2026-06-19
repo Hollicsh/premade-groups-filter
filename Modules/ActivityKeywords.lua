@@ -119,7 +119,7 @@ C.MAP_ID_TO_KEYWORDS = {
     [2912] = { "mn", "vs" }, -- The Voidspire
     [2913] = { "mn", "moq" }, -- March on Quel'Danas
     [2939] = { "mn", "dr" }, -- The Dreamrift
-    [3004] = { "mn", "va" } -- The Venomous Abyss
+    [3004] = { "mn", "va" }, -- The Venomous Abyss
 
     -- Dungeons
     [ 658] = { "wotlk", "pos", "mns1" }, -- Pit of Saron
